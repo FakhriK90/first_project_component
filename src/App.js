@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import Photo from "./Component/Profile/Photo";
+import FullName from"./Component/Profile/FullName";
+import Adress from "./Component/Profile/Adress"
+import NavBar from "./Component/Profile/Navbar"
+import ImgFb from "./Component/Profile/footer"
 import './App.css';
 
-function App() {
-  return (
+const App = () => (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+      <header><NavBar /></header>
+      </>
+       <>
+   <Photo />
+ </>
+ <>
+ <FullName />
+ </>
+ <>
+ <Adress />
+ </>
+ <>
+ <footer><ImgFb /></footer>
+ </>
     </div>
   );
-}
+
 
 export default App;
